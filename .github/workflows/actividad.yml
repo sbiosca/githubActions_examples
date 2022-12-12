@@ -1,4 +1,4 @@
-name: activityBiosca_Sergi
+name: activityBiosca_Sergis
 on:
   push:
     branches:

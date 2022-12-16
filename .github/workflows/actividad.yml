@@ -9,12 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: github/super-linter@v4
-        env:
-          DEFAULT_BRANCH: nodejs_jest_job
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LINTER_RULES_PATH: /
-          JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
-          VALIDATE_JAVASCRIPT_ES: true
+    env:
+      DEFAULT_BRANCH: nodejs_jest_job
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      LINTER_RULES_PATH: /
+      JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+      VALIDATE_JAVASCRIPT_ES: true        
   test-execution:
     runs-on: ubuntu-latest
     needs: linter-execution
